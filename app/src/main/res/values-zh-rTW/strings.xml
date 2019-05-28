@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">匯兌</string>
+    <string name="go">換算</string>
+    <string name="hint">提示</string>
+    <string name="hint_empty_amount">請輸入新台幣數量</string>
+    <string name="ntd">新台幣</string>
+    <string name="ok">確認</string>
+    <string name="result">結果</string>
+    <string name="usd_result">美金數量</string>
+</resources>

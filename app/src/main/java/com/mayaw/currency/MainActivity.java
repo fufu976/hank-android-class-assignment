@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
         final String ntd_s = edNtd.getText().toString();
         if(TextUtils.isEmpty(ntd_s)){
             new AlertDialog.Builder(this)
-                    .setTitle("Problem")
-                    .setMessage("Please enter your NTD amount")
-                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    .setTitle(getString(R.string.hint))
+                    .setMessage(getString(R.string.hint_empty_amount))
+                    .setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             edNtd.setText("");
@@ -43,9 +43,9 @@ public class MainActivity extends AppCompatActivity {
             float ntd_f = Float.parseFloat(ntd_s);
             float us_f = (float) (ntd_f / 30.9);
             new AlertDialog.Builder(this)
-                    .setTitle("Result")
-                    .setMessage("USD is " + us_f)
-                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    .setTitle(getString(R.string.result))
+                    .setMessage(getString(R.string.usd_result) + us_f)
+                    .setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             edNtd.setText("");
